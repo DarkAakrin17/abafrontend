@@ -1,0 +1,94 @@
+.about {
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.about-left,
+.about-right {
+    flex-basis: 48%;
+    position: relative;
+}
+
+.about-img1,
+.about-img2,
+.about-img3 {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    max-height: 300px;
+}
+
+.about-img4 {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.about h3 {
+    font-size: 27px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.about h2 {
+    font-size: 35px;
+    color: #003a66;
+    margin: 10px 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.about p {
+    color: #2c2c2c;
+    margin-bottom: 15px;
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.6;
+}
+
+.text-glow2 {
+    font-size: inherit;
+    color: #002b4d;
+    text-shadow: 0 0 10px #6a5acd, 0 0 20px #6a5acd, 0 0 30px #8a2be2, 0 0 40px #8a2be2;
+    animation: glowEffect 1.5s infinite alternate;
+}
+
+@keyframes glowEffect {
+    from {
+        text-shadow: 0 0 5px #6a5acd, 0 0 10px #6a5acd, 0 0 20px #8a2be2, 0 0 30px #8a2be2;
+    }
+    to {
+        text-shadow: 0 0 10px #6a5acd, 0 0 20px #8a2be2, 0 0 40px #9370db, 0 0 60px #9370db;
+    }
+}
+
+@media (max-width: 891px) {
+    .about {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .about-left,
+    .about-right {
+        flex-basis: 100%;
+    }
+
+    .about-img4 {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+}

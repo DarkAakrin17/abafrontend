@@ -1,0 +1,271 @@
+    @import url(https://db.onlinewebfonts.com/c/be6ee7dae05b1862ef6f63d5e2145706?family=Monotype+Old+English+Text+W01);
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+
+    .navbar {
+    width: 100vw;  /* Full viewport width */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 4%;
+    height: 80px;
+    z-index: 15;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+    nav {
+        background-color: white;
+        width: 100%;
+        background: #fff;
+        padding: 10px 20px;
+        height: 80px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 15;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .navbutton{
+        cursor: pointer;
+        color: #003a66;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo {
+        /* color: #000; */
+        color: #000000;
+        font-family: "Monotype Old English Text W01";
+        width: 100px;
+        font-weight: 900;
+        font-size: 50px;
+    }
+
+    .name {
+        font-family: "Merriweather", serif;
+        color: #000;
+        font-weight: 900;
+        font-size: 30px;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        cursor: pointer;
+        font-size: 16px;
+        color: #003a66;
+    }
+
+    .custom-btn {
+        background: #213ad8;
+        color: #fff;
+        padding: 7px 22px;
+        font-size: 16px;
+        font-weight: 600;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+        box-shadow: 3px 3px 3px rgb(0, 0, 0);
+    }
+
+    .custom-btn:hover {
+        background: #212121;
+        box-shadow: none;
+        transform: translate(3px, 3px);
+    }
+
+    /* --- Flyout Styles --- */
+    .flyout-container {
+        position: relative;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .flyout-link {
+        position: relative;
+        color:rgb(0, 44, 78);
+        font-size: 17;
+        font-weight: 350;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .flyout-underline {
+        position: absolute;
+        bottom: -4px;
+        left: -2px;
+        right: -2px;
+        height: 4px;
+        background-color: #6a7bec;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease-out;
+    }
+
+    .show-underline {
+        transform: scaleX(1);
+    }
+
+    .flyout-gap {
+        position: absolute;
+        top: -6px;
+        left: 0;
+        right: 0;
+        height: 6px;
+        background: transparent;
+    }
+
+    .flyout-content {
+        position: absolute;
+        left: -20px;
+        top: 140%;
+        background: #14141d; /* Mild pastel color */
+        color: #ffffff;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+        border-radius: 8px;
+        z-index: 999;
+        border: 1px solid #d1d5f0; /* Subtle border for structure */
+    }
+
+    .flyout-arrow {
+        position: absolute;
+        left: 20px;  /* Align arrow properly */
+        top: -8px; 
+        width: 16px;
+        height: 16px;
+        background: #020735; /* Same color as the flyout box */
+        transform: rotate(45deg);
+        box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+        border-left: 1px solid #d1d5f0;  /* Border on two sides for clarity */
+        border-top: 1px solid #d1d5f0;
+    }
+
+    .pricing-content {
+        width: 250px;
+        background: #212121;
+        padding: 16px;
+    }
+
+    .pricing-section {
+        margin-bottom: 10px;
+    }
+
+    .pricing-section h3 {
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    .pricing-section a {
+        display: block;
+        padding: 4px 0;
+        color: #ffffffcc;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .pricing-section a:hover {
+        text-decoration: underline;
+        color: #6a7bec;
+    }
+
+    .contact-btn {
+        background: #6a7bec;
+        color: #fff;
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+    .contact-btn:hover {
+        background: #4a5bb5;
+    }
+
+    .pricing-section dd {
+        margin-left: 20px; /* Adjust as per your preference */
+    }
+
+    .navbar-logo {
+  display: block;
+}
+
+.menu-icon {
+  cursor: pointer;
+  color: #003a66;
+  display: none;
+}
+
+@media (max-width: 851px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .mobile-menu {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    margin: 0;
+    padding: 20px 4%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 999;
+  }
+
+  .mobile-menu li {
+    font-size: 18px;
+    color: #003a66;
+  }
+
+  .mobile-menu .custom-btn {
+    width: 100%;
+  }
+}
+
+    /* @media (max-width: 850px) {
+    .flyout-underline {
+        display: none;
+    }
+    } */
+
+
+
+
+@media (max-width: 1240px) {
+  .navbar-logo {
+    display: none;
+  }
+}

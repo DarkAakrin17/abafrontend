@@ -1,0 +1,417 @@
+/* Container for the slideshow */
+.slide-container {
+    padding-top: 80px;
+    position: relative;
+    width: 100%;
+    height: auto !important;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 0% !important ;
+  }
+  
+  /* Individual slides */
+  .slides img {
+    width: 100%;
+    height: 100%; /* Ensures image covers the slide area */
+    object-fit: cover; /* Maintains aspect ratio */
+  }
+  
+  /* Dots container */
+  .carousel-dots {
+    position: absolute;
+    padding-left: 2%;
+    padding-right: 2%;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    z-index: 9; /* Ensure dots are above the slides */
+  }
+  
+  /* Dot style with white border */
+  .carousel-dots .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: gray;
+    border: 2px solid rgba(255, 255, 255, 0.9); /* White border added */
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+    user-select: none; /* Prevent text selection */
+  }
+  
+  /* Active dot style */
+  .carousel-dots .dot.active {
+    background-color: black;
+    opacity: 1;
+  }
+  
+  /* Hover effect on dots */
+  .carousel-dots .dot:hover {
+    opacity: 0.8;
+    background-color: darkgray;
+  }
+  
+  /* Remove focus outline from dots */
+  .carousel-dots .dot:focus {
+    outline: none;
+  }
+  
+  /* Extra: Smooth transition for dot appearance */
+  .carousel-dots .dot, .carousel-dots .dot.active {
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+  }
+  @media (max-width: 1365px) {
+    .slide-container {
+      position: relative;
+      width: 100%;
+      height: 500px; /* Adjust based on your design */
+      overflow: hidden;
+      margin: auto;
+      margin-bottom: 0%;
+    }
+    .carousel-dots{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    z-index: 9; /* Ensure dots are above the slides */
+    }
+  }
+  @media (max-width: 1235px) {
+    .slide-container {
+      position: relative;
+      width: 100%;
+      height: 450px; /* Adjust based on your design */
+      overflow: hidden;
+      margin: auto;
+      margin-bottom: 0%;
+    }
+  }
+  @media (max-width: 1130px) {
+    .slide-container {
+      position: relative;
+      width: 100%;
+      height: 400px; /* Adjust based on your design */
+      overflow: hidden;
+      margin: auto;
+      margin-bottom: 0%;
+    }
+  }
+  @media (max-width: 1060px) {
+    .slide-container {
+      position: relative;
+      width: 100%;
+      height: 370px; /* Adjust based on your design */
+      overflow: hidden;
+      margin: auto;
+      margin-bottom: 0%;
+    }
+  }
+  @media (max-width: 970px) {
+    .slide-container {
+      position: relative;
+      width: 100%;
+      height: 350px; /* Adjust based on your design */
+      overflow: hidden;
+      margin: auto;
+      margin-bottom: 0%;
+    }
+  }
+  @media (max-width: 876px) {
+    .slide-container {
+      position: relative;
+      width: 100%;
+      height: 320px; /* Adjust based on your design */
+      overflow: hidden;
+      margin: auto;
+      margin-bottom: 0%;
+    }
+  }
+  @media (max-width: 838px) {
+    .slide-container {
+      position: relative;
+      width: 100%;
+      height: 300px; /* Adjust based on your design */
+      overflow: hidden;
+      margin: auto;
+      margin-bottom: 0%;
+    }
+  }
+  @media (max-width: 777px) {
+    .slide-container {
+      position: relative;
+      width: 100%;
+      height: 270px; /* Adjust based on your design */
+      overflow: hidden;
+      margin: auto;
+      margin-bottom: 0%;
+    }
+  }
+  @media (max-width: 763px) {
+    .slide-container {
+      position: relative;
+      width: 100%;
+      height: 250px; /* Adjust based on your design */
+      overflow: hidden;
+      margin-bottom: 0%;
+      margin: auto;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .slide-container {
+      position: relative;
+      width: 100%;
+      height: 269px; /* Adjust based on your design */
+      overflow: hidden;
+      margin-bottom: 0%;
+      margin: auto;
+    }
+    .carousel-dots{
+    position: relative;
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    z-index: 9; /* Ensure dots are above the slides */
+    }
+  }
+  @media (max-width: 750px) {
+    .slide-container {
+      position: relative;
+      width: 100%;
+      height: 260px; /* Adjust based on your design */
+      overflow: hidden;
+      margin: auto;
+      margin-bottom: 0%;
+    }
+  }
+  @media (max-width: 690px) {
+    .slide-container {
+      position: relative;
+      width: 100%;
+      height: 240px; /* Adjust based on your design */
+      overflow: hidden;
+      margin-bottom: 0%;
+      margin: auto;
+    }
+  }
+  @media (max-width: 650px) {
+    .slide-container {
+      position: relative;
+      width: 100%;
+      height: 220px; /* Adjust based on your design */
+      overflow: hidden;
+      margin: auto;
+    }
+  }
+  @media (max-width: 598px) {
+    .slide-container {
+      position: relative;
+      width: 100%;
+      margin-bottom: 0%;
+      height: 210px; /* Adjust based on your design */
+      overflow: hidden;
+      margin: auto;
+    }
+  }
+  @media (max-width: 590px) {
+    .slide-container {
+      position: relative;
+      width: 100%;
+      height: 205px; /* Adjust based on your design */
+      overflow: hidden;
+      margin: auto;
+      margin-bottom: 0%;
+    }
+  }
+  
+  @media (max-width: 584px) {
+    .slide-container {
+      position: relative;
+      width: 100%;
+      height: 200px; /* Adjust based on your design */
+      overflow: hidden;
+      margin: auto;
+      margin-bottom: 0%;
+    }
+  }
+  @media (max-width: 579px) {
+    .slide-container {
+      position: relative;
+      width: 100%;
+      height: 198px; /* Adjust based on your design */
+      overflow: hidden;
+      margin: auto;
+      margin-bottom: 0%;
+    }
+  }
+  @media (max-width: 575px) {
+    .slide-container {
+      position: relative;
+      width: 100%;
+      height: 208px; /* Adjust based on your design */
+      overflow: hidden;
+      margin: auto;
+      margin-bottom: 0%;
+    }
+  }
+  
+  @media (max-width: 570px) {
+    .slide-container {
+      position: relative;
+      width: 100%;
+      height: 196px; /* Adjust based on your design */
+      overflow: hidden;
+      margin: auto;
+      margin-bottom: 0%;
+    }
+  }
+  @media (max-width: 565px) {
+    .slide-container {
+      position: relative;
+      width: 100%;
+      height: 199px; /* Adjust based on your design */
+      overflow: hidden;
+      margin: auto;
+      margin-bottom: 0%;
+    }
+  }
+  @media (max-width: 545px) {
+    .slide-container {
+      position: relative;
+      width: 100%;
+      height: 189px; /* Adjust based on your design */
+      overflow: hidden;
+      margin: auto;
+      margin-bottom: 0%;
+    }
+  }
+  @media (max-width: 541px) {
+    .slide-container {
+      position: relative;
+      width: 100%;
+      height: 420px; /* Adjust based on your design */
+      overflow: hidden;
+      margin: auto;
+      margin-bottom: 0%;
+    }
+  }
+  @media (max-width: 520px) {
+    .slide-container {
+      position: relative;
+      width: 100%;
+      height: 410px; /* Adjust based on your design */
+      overflow: hidden;
+      margin: auto;
+      margin-bottom: 0%;
+    }
+  }
+  
+  @media (max-width: 510px) {
+    .slide-container {
+      position: relative;
+      width: 100%;
+      height: 400px; /* Adjust based on your design */
+      overflow: hidden;
+      margin: auto;
+      margin-bottom: 0%;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .slide-container {
+      position: relative;
+      width: 100%;
+      height: 390px; /* Adjust based on your design */
+      overflow: hidden;
+      margin: auto;
+      margin-bottom: 0%;
+    }
+  }
+  
+  @media (max-width: 490px) {
+    .slide-container {
+      position: relative;
+      width: 100%;
+      height: 380px; /* Adjust based on your design */
+      overflow: hidden;
+      margin: auto;
+      margin-bottom: 0%;
+    }
+  }
+  @media (max-width: 480px) {
+    .slide-container {
+      position: relative;
+      width: 100%;
+      height: 369px; /* Adjust based on your design */
+      overflow: hidden;
+      margin: auto;
+      margin-bottom: 0%;
+    }
+  }
+  @media (max-width: 470px) {
+    .slide-container {
+      position: relative;
+      width: 100%;
+      height: 360px; /* Adjust based on your design */
+      overflow: hidden;
+      margin: auto;
+      margin-bottom: 0%;
+    }
+  }
+  @media (max-width: 450px) {
+    .slide-container {
+      position: relative;
+      width: 100%;
+      height: 350px; /* Adjust based on your design */
+      overflow: hidden;
+      margin: auto;
+      margin-bottom: 0%;
+    }
+  }
+  @media (max-width: 440px) {
+    .slide-container {
+      position: relative;
+      width: 100%;
+      height: 335px; /* Adjust based on your design */
+      overflow: hidden;
+      margin: auto;
+      margin-bottom: 0%;
+    }
+  }
+  @media (max-width: 415px) {
+    .slide-container {
+      position: relative;
+      width: 100%;
+      height: 330px; /* Adjust based on your design */
+      overflow: hidden;
+      margin: auto;
+      margin-bottom: 0%;
+    }
+  }
+  @media (max-width: 391px) {
+    .slide-container {
+      position: relative;
+      width: 100%;
+      height: 299px; /* Adjust based on your design */
+      overflow: hidden;
+      margin: auto;
+      margin-bottom: 0%;
+    }
+  }
+  @media (max-width: 376px) {
+    .slide-container {
+      position: relative;
+      width: 100%;
+      height: 285px; /* Adjust based on your design */
+      overflow: hidden;
+      margin: auto;
+      margin-bottom: 0%;
+    }
+  }

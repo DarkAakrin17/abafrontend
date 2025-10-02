@@ -1,0 +1,49 @@
+/* Update for WhatsApp button */
+.whatsapp-button-container {
+    position: fixed;
+    bottom: 20px;
+    user-select: none;
+    right: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    z-index: 1500; /* Lower z-index than cookie consent container */
+  }
+  
+  /* Tooltip */
+  .tooltip {
+    user-select: none;
+    visibility: hidden;
+    opacity: 0;
+    background-color: #25D366;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: opacity 0.3s ease;
+    font-size: 14px;
+    white-space: nowrap;
+    z-index: 1501; /* Slightly higher than WhatsApp icon but lower than cookie consent */
+  }
+  
+  .whatsapp-button-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    user-select: none;
+  }
+  
+  .whatsapp-icon {
+    user-select: none;
+    background-color: #25D366;
+    border-radius: 20%;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+    z-index: 1000; /* Ensures the icon stays above other content */
+  }
+  
+  .whatsapp-icon:hover {
+    user-select: none;
+    transform: scale(1.1);
+  }
+  

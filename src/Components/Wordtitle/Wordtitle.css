@@ -1,0 +1,24 @@
+.wordtitle {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .wordsubtitle {
+    color: #212EA0;
+    user-select: none;
+    font-size: 14px; /* smaller than before */
+    font-weight: 700; /* lighter */
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    margin-bottom: 4px;
+  }
+  
+  .wordtitle h2 {
+    font-size: 26px; /* reduced size */
+    color: #000F38;
+    margin: 0;
+    font-weight: 780; /* bold */
+    text-transform: none;
+  }
+  
