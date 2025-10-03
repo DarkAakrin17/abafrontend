@@ -4,18 +4,15 @@ import axios from "axios";
 const BookList = () => {
   const [books, setBooks] = useState([]);
 
-  // ✅ use env variable, fallback to localhost for dev
-  const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
-
   useEffect(() => {
-    axios.get(`${API_BASE_URL}/api/books`)
+    axios.get("https://ababackend.onrender.com/api/books")
       .then((res) => {
         setBooks(res.data);
       })
       .catch((err) => {
         console.error("❌ Error fetching books:", err);
       });
-  }, [API_BASE_URL]);
+  }, []);
 
   return (
     <div className="p-4">
@@ -26,16 +23,12 @@ const BookList = () => {
             <p className="font-semibold">{book.title}</p>
             <p>Author: {book.author}</p>
             <p>Price: ₹{book.price}</p>
-            <p>
-              Availability:{" "}
-              <span
-                className={
-                  book.AVAILABILITY === "YES" ? "text-green-600" : "text-red-600"
-                }
-              >
+            <p>Availability: 
+              <span className={book.AVAILABILITY === "YES" ? "text-green-600" : "text-red-600"}>
                 {book.AVAILABILITY}
               </span>
             </p>
+            {/* Show image if available */}
             {book.Image !== "NaN" && (
               <img
                 src={book.Image}
