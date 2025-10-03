@@ -13,6 +13,19 @@ import BookList from './Components/BookList/BookList'
 import Title3 from './Components/Title3/Title3'
 import OurPublications from './Components/OurPublications/OurPublications'
 
+const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+
+// Fetch all books
+export async function getBooks() {
+  try {
+    const res = await fetch(`${API_BASE_URL}/api/books`);
+    if (!res.ok) throw new Error("Failed to fetch books");
+    return await res.json();
+  } catch (error) {
+    console.error("Error fetching books:", error);
+    return [];
+  }
+}
 
 const App = () => {
   return (
