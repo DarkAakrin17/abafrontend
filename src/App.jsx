@@ -9,7 +9,7 @@ import Title2 from './Components/Title2/Title2'
 import Contact from './Components/Contact/Contact'
 import Wordtitle from './Components/Wordtitle/Wordtitle'
 import Footer from './Components/Footer/Footer'
-import BookList from './Components/BookList/Booklist'
+import BookList from './Components/BookList/BookList'
 import Title3 from './Components/Title3/Title3'
 import OurPublications from './Components/OurPublications/OurPublications'
 
